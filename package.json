@@ -1,0 +1,33 @@
+{
+  "name": "zazu-encode-decode",
+  "version": "1.0.0",
+  "description": "Zazu Plugin for encoding/decoding strings in multiple formats (base64, url, html, etc)",
+  "keywords": [
+    "zazu",
+    "zazu-plugin",
+    "encode",
+    "decode"
+  ],
+  "scripts": {
+    "test": "mocha ./test",
+    "lint": "node_modules/.bin/eslint ."
+  },
+  "author": "Bruno Paz <brunopaz@sapo.pt>",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/brpaz/zazu-encode-decode",
+    "type": "git"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-config-brpaz": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "install": "^0.8.4",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "html-entities": "^1.2.0"
+  }
+}

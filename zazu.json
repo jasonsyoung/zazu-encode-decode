@@ -1,0 +1,50 @@
+{
+  "name": "zazu-encode-decode",
+  "version": "1.0.0",
+  "description": "Zazu Plugin for encoding/decoding strings in multiple formats (base64, url, html, ...)",
+  "blocks": {
+    "input": [
+      {
+        "id": "encode-helper",
+        "type": "PrefixScript",
+        "prefix": "encode",
+        "space": false,
+        "args": "None",
+        "script": "src/helper/encodeHelper.js"
+      },
+      {
+        "id": "encode",
+        "type": "PrefixScript",
+        "prefix": "encode",
+        "space": true,
+        "args": "Required",
+        "script": "src/encode.js",
+        "connections": ["Copy"]
+      },
+       {
+        "id": "decode-helper",
+        "type": "PrefixScript",
+        "prefix": "decode",
+        "space": false,
+        "args": "None",
+        "script": "src/helper/decodeHelper.js"
+      },
+      {
+        "id": "decode",
+        "type": "PrefixScript",
+        "prefix": "decode",
+        "space": true,
+        "args": "Required",
+        "script": "src/decode.js",
+        "connections": ["Copy"]
+      }
+    ],
+    "output": [
+      {
+        "id": "Copy",
+        "type": "CopyToClipboard",
+        "text": "{value}"
+      }
+    ]
+  }
+}
