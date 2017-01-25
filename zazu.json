@@ -21,6 +21,15 @@
         "script": "src/encode.js",
         "connections": ["Copy"]
       },
+      {
+        "id": "encode-clip",
+        "type": "PrefixScript",
+        "prefix": "encode",
+        "space": false,
+        "args": "None",
+        "script": "src/encode.js",
+        "connections": ["Copy"]
+      },
        {
         "id": "decode-helper",
         "type": "PrefixScript",
@@ -35,6 +44,15 @@
         "prefix": "decode",
         "space": true,
         "args": "Required",
+        "script": "src/decode.js",
+        "connections": ["Copy"]
+      },
+      {
+        "id": "decode-clip",
+        "type": "PrefixScript",
+        "prefix": "decode",
+        "space": false,
+        "args": "None",
         "script": "src/decode.js",
         "connections": ["Copy"]
       }
