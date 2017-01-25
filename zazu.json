@@ -6,11 +6,19 @@
     "input": [
       {
         "id": "encode-helper",
-        "type": "PrefixScript",
-        "prefix": "encode",
-        "space": false,
-        "args": "None",
-        "script": "src/helper/encodeHelper.js"
+        "type": "Keyword",
+        "keyword": "encode",
+        "title": "Encode",
+        "subtitle": "Encodes a string into multiple formats (Usage: encode mystring)",
+        "icon": "fa-file-code-o"
+      },
+      {
+        "id": "decode-helper",
+        "type": "Keyword",
+        "keyword": "decode",
+        "title": "Decode",
+        "subtitle": "Decodes a string into multiple formats (Usage: decode mystring)",
+        "icon": "fa-file-code-o"
       },
       {
         "id": "encode",
@@ -29,14 +37,6 @@
         "args": "None",
         "script": "src/encode.js",
         "connections": ["Copy"]
-      },
-       {
-        "id": "decode-helper",
-        "type": "PrefixScript",
-        "prefix": "decode",
-        "space": false,
-        "args": "None",
-        "script": "src/helper/decodeHelper.js"
       },
       {
         "id": "decode",
