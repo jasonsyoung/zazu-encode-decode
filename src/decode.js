@@ -3,10 +3,11 @@ const querystring = require('querystring');
 
 module.exports = pluginContext => (query, env = {}) => new Promise((resolve, reject) => {
   const entities = new Entities();
+  const input = query || pluginContext.clipboard.readText();
 
-  const base64 = new Buffer(query, 'base64').toString('ascii');
-  const url = querystring.unescape(query);
-  const html = entities.decode(query);
+  const base64 = new Buffer(input, 'base64').toString('ascii');
+  const url = querystring.unescape(input);
+  const html = entities.decode(input);
 
   resolve([
     {
