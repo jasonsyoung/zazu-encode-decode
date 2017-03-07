@@ -17,7 +17,7 @@ Add the plugin in ```~/.zazurc.json``` file:
 ```json
 {
   "plugins": [
-    "brpaz/encode-decode",
+    "brpaz/zazu-encode-decode",
   ]
 }
 ```
